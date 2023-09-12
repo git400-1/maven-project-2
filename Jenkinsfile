@@ -56,6 +56,9 @@ pipeline {
 
     }
     stage('Approval') {
+      when{
+        
+      }
       steps {
         input('Do you want to proceed?')
       }
